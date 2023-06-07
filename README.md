@@ -43,7 +43,7 @@ The mdbook-cairo backend is working as following:
 2. Code blocks with a main function `#[contract]` are extracted into Cairo contracts.
 3. The extracted contracts are named based on the chapter they belong to, and a consecutive
    number of the `#[contract]` found in the chapter.
-4. If you have a code block with a `#[contract]` function, but you know that is does not compile,
+4. If you have a code block with a `#[contract]` function, but you know that it does not compile,
    you can add an attribute to the code block tag value as following:
 
    ````
@@ -58,7 +58,7 @@ The mdbook-cairo backend is working as following:
    This main function will still count in the consecutive number of `#[contract]` in the chapter file,
    but will not be extracted into a Cairo program.
 
-To run the CI locally, ensure that you are at the root of the repository (same directoy of this `README.md` file),
+To run the CI locally, ensure that you are at the root of the repository (same directory as this `README.md` file),
 and run:
 
 `bash mdbook-cairo/scripts/cairo_local_verify.sh`
